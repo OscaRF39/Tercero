@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Home</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{url_for('static',filename='css/estilos.css')}}" rel="stylesheet">
+    <script src="{{url_for('static',filename='js/funciones.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery-ui.js')}}"></script>
+
+    <!-- Archivos de Bootstrap -->
+    <link href="{{url_for('static',filename='css/bt-min.css')}}" rel="stylesheet">
+    <script src="{{url_for('static',filename='js/bt-bun.js')}}"></script>
+    <!-- Archivos de Bootstrap -->
+</head>
+<body>
+    
+    <nav class="navbar bg-primary navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">UPP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/productos">Productos</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/clientes">Clientes</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/login">Ingresar</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/cerrar-sesion">Cerrar Sesión</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+    <!-- Ventana MODAL -->			
+    <div class="modal fade .modal-lg" id="ModalSistema" tabindex="-1"></div>		
+    <!-- Ventana MODAL -->
+    {% block content %}
+    {% endblock %}
+    <br>
+    PIE PAGINA
+</body>
+</html>
