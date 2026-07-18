@@ -7,10 +7,10 @@ import hashlib
 #Configuración de flask para MySQL
 app = Flask(__name__)
 app.secret_key = 't1burones'
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
-app.config['MYSQL_DB'] = 'tienda3'
+app.config['MYSQL_HOST'] = 'sql7.freesqldatabase.com'
+app.config['MYSQL_USER'] = 'sql7833363'
+app.config['MYSQL_PASSWORD'] = 'ClWLMIf2m8'
+app.config['MYSQL_DB'] = 'sql7833363'
 mysql = MySQL(app)
 
 def login_required(f):
