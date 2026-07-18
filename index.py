@@ -4,6 +4,7 @@ from flask_mysqldb import MySQL
 from datetime import datetime
 import hashlib
 
+#Configuración de flask para MySQL
 app = Flask(__name__)
 app.secret_key = 't1burones'
 app.config['MYSQL_HOST'] = 'localhost'
